@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Mica Download Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Modern Mica Downloads</h1>
+</header>
+
+<main>
+    <section class="downloads">
+        <h2>Download Our Latest Release</h2>
+        <p>Choose your preferred version:</p>
+        <div class="download-options">
+            <button onclick="download('windows')">Download for Windows</button>
+            <button onclick="download('mac')">Download for macOS</button>
+            <button onclick="download('linux')">Download for Linux</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Modern Mica. All rights reserved.</p>
+</footer>
+
+<script>
+    function download(platform) {
+        switch (platform) {
+            case 'windows':
+                window.location.href = 'https://example.com/downloads/modern-mica-windows.zip';
+                break;
+            case 'mac':
+                window.location.href = 'https://example.com/downloads/modern-mica-macos.zip';
+                break;
+            case 'linux':
+                window.location.href = 'https://example.com/downloads/modern-mica-linux.zip';
+                break;
+            default:
+                alert('Invalid platform');
+        }
+    }
+</script>
+
+</body>
+</html>
