@@ -1,14 +1,27 @@
+@import url('https://gamesense.wiki/static/css/gamesense.theme.css?v=1.0.4');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('https://i.imgur.com/FLI3MoC.jpg'); /* Replace 'background.png' with your image file */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 main {
@@ -45,12 +58,9 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
